@@ -17,11 +17,10 @@
 
 print("Welcome to the band name generator!\n");
 
-cidade = input("What is the name of the city you were born in?\n");
+cidade = input("What is the name of the city you were born in?\n\n>" );
 print("\nCool, i love " + cidade + "!\n");
 
-animal = input("And, what is your pet's name?\n");
+animal = input("And, what is your pet's name?\n\n>");
 print("\nOwn, So cute!\n");
 
 print("Your band name could be " + animal + " " + cidade);
-
