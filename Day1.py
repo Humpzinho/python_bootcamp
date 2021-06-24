@@ -1,7 +1,7 @@
 
 #In Portuguese
 
-print("Seja Bem-vindo(a) ao gerador de nomes de bandas!\n");
+print("\nSeja Bem-vindo(a) ao gerador de nomes de bandas!\n");
 
 cidade = input("Qual é o nome da cidade que você nasceu?\n\n>");
 print("\nLegal, eu adoro " + cidade + "!\n");
@@ -15,7 +15,7 @@ print("O nome da sua banda podia ser " + animal + " " + cidade);
 
 #In English
 
-#print("Welcome to the band name generator!\n");
+#print("\nWelcome to the band name generator!\n");
 
 #cidade = input("What is the name of the city you were born in?\n\n>" );
 #print("\nCool, i love " + cidade + "!\n");
