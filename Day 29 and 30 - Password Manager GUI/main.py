@@ -71,18 +71,18 @@ def save():
 
         if is_ok:
             try:
-                with open(file="Day 29 - Password Manager GUI\\data.json",
+                with open(file="Day 29 and 30 - Password Manager GUI\\data.json",
                           mode="r") as file:
                     data = json.load(file)
                     data.update(new_data)
                     
             except:
-                with open(file="Day 29 - Password Manager GUI\\data.json",
+                with open(file="Day 29 and 30 - Password Manager GUI\\data.json",
                           mode="w") as file:
                     json.dump(new_data, file, indent=4)
 
             else:
-                with open(file="Day 29 - Password Manager GUI\\data.json",
+                with open(file="Day 29 and 30 - Password Manager GUI\\data.json",
                           mode="w") as file:
                     json.dump(data, file, indent=4)
                     
@@ -102,7 +102,7 @@ from tkinter.ttk import *
 
 #CANVAS SETTINGS
 canvas = Canvas(width=200, height=200)
-logo = PhotoImage(file="Day 29 - Password Manager GUI\logo.png")
+logo = PhotoImage(file="Day 29 and 30 - Password Manager GUI\\logo.png")
 canvas.create_image(100, 100, image=logo)
 
 #LABELS
@@ -119,7 +119,7 @@ search_button = Button(text="Search", command=find_data)
 website_entry = Entry(width=40)
 website_entry.focus()
 email_entry = Entry()
-email_entry.insert(0, "srdrone@hotmail.com")
+email_entry.insert(7, "example@gmail.com")
 password_entry = Entry()
 
 #GRID
