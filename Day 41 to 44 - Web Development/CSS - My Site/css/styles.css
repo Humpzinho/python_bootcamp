@@ -1,0 +1,355 @@
+@media only screen and (max-width: 630px) {
+        .mountain{
+            visibility: hidden;
+        }
+        .top-cloud{
+            display: none;
+        }
+        .bottom-cloud , .bottom-2-cloud{
+            display: none;
+        }
+
+        .top_container{
+            height: 20vh;
+        }
+}
+
+@media only screen and (max-width: 1100px) {
+    .top-cloud{
+        display: none;
+    }
+    .bottom-cloud, .bottom-2-cloud{
+        display: none;
+    }
+    .img-1{
+        display:none;
+    }
+    .img-2 {
+        display:none;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+    background: rgb(117, 4, 4);
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 5px rgb(247, 247, 247);  */
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+
+
+body {
+    margin: 0;
+    text-align: center;
+    background-color: #FFA900;
+    font-family: 'Merriweather', serif;
+    overflow-x: hidden;
+    /* animation: body_anm 2s; */
+}
+
+@keyframes body_anm {
+    0%{
+        overflow-y: hidden;
+    }
+    99%{
+        overflow-y: hidden;
+    }    
+    100%{
+        overflow-y: visible;
+    }
+}
+
+
+h1 {
+    margin-top: 30;
+    margin-bottom: 0;
+    font-size: 14vh;
+    font-family: 'Sacramento', cursive;
+    color: white;
+    animation: h1_anm 2s ease-in-out forwards;
+}
+
+@keyframes h1_anm {
+    0%{
+        transform: translateY(-20%);
+        opacity: 0%;
+    }
+    50%{
+        transform: translateY(-20%);
+        opacity: 0%;
+    }
+}
+
+hr {
+    border-color: #3DB2FF;
+    border-style: none;
+    border-top-style: dotted;
+    border-width: 12px;
+    width: 10%;
+    margin: 100px auto 100px auto;
+    }
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8vh;
+    color: #3DB2FF;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3vh;
+    color: #3DB2FF;
+    font-weight: bold;
+}
+
+a {
+    color: #11999E;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 2%;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    color: white;
+    font-size: 2vh;
+}
+
+.bottom-p{
+    margin-top: 35px;
+    color: white;
+    font-size: 0.8em;
+}
+
+
+.top_container {
+    background-color: #2A0944;
+    position: relative;
+    left: 0;
+    background: rgb(42,9,68);
+    background: -moz-linear-gradient(0deg, rgba(42,9,68,1) 7%, rgba(10,25,49,1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(42,9,68,1) 7%, rgba(10,25,49,1) 100%);
+    background: linear-gradient(0deg, rgba(42,9,68,1) 7%, rgba(10,25,49,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2a0944",endColorstr="#0a1931",GradientType=1);
+    padding-top: 20px;
+    padding-bottom: 63.5vh;
+    z-index: 1;
+}
+
+.separator {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: rgb(117,10,34);
+background: linear-gradient(0deg, rgba(117,10,34,1) 40%, rgba(205,17,59,1) 87%);
+    padding-top: 10vh;
+    z-index: 0;
+    animation: separator-anm 2.5s  ease-in-out forwards
+}
+
+@keyframes separator-anm {
+    0%{
+        padding-top: 0vh;
+        padding-bottom: 0vh;
+    }
+    40%{
+        padding-bottom: 20vh;
+    }
+    100%{
+        padding-bottom: 10vh;
+    }
+}
+
+.separator-1 {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background: rgb(34,114,167);
+    background: linear-gradient(0deg, rgba(34,114,167,1) 0%, rgba(61,178,255,1) 87%);
+    padding-top: 5vh;
+    z-index: 0;
+    animation: separator-anm-1 3s ease-in-out forwards;
+}
+
+@keyframes separator-anm-1 {
+    0%{
+        padding-top: 0vh;
+        padding-bottom: 0vh;
+    }
+    60%{
+        padding-bottom: 10vh;
+    }
+    100%{
+        padding-bottom: 5vh;
+    }
+}
+
+.separator-2 {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    background-color: #FF7600;
+    padding-top: 10vh;
+    z-index: 2;
+
+}
+
+.separator-3-invisible{
+    position: absolute;
+    width: 100%;
+    background-color: #6200ff;
+    padding-top: 23vh;
+    z-index: 3;
+    box-shadow: 0 10px 100px #6200ff;
+}
+
+.programmer{
+    margin: 0;
+    color: white;
+    font-weight: normal;
+    font-size: 4vh;
+    animation: programmer-anm 3.5s ease-in-out forwards;
+}
+
+@keyframes programmer-anm {
+    0%{
+        transform: translateY(50px);
+        opacity: 0%;
+    }
+    25%{
+        opacity: 0%;
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
+.pro {
+    text-decoration: underline;
+}
+
+.bottom-container{
+    background-color: #66bfbf;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.profile-img{
+    padding: 2% 1% 0 1%;
+    width: 20vh;
+    margin: 70px auto 30px auto;
+    border-radius: 30%;
+    background-color: #FF7600;
+    box-shadow: 0 8px 50px #290268;
+}
+
+.profile {
+    width: 70%;
+    margin: 0 auto 0 auto;
+    position: relative;
+    z-index: 5;
+}
+
+.img-1{
+    border-radius: 100%;
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+
+.img-2{
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+}
+
+.skill-row{
+    width: 50%;
+    margin: 100px auto 0 auto;
+    text-align: left;
+    z-index: 2;
+    line-height: 2;
+}
+
+.mountain {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 650px;
+    width: 65vh;
+    z-index: 2;
+    animation: mountain_anm 1.5s ease-in-out;
+
+}
+
+@keyframes mountain_anm {
+    0%{
+        bottom: -200px;
+    }
+}
+
+.bottom-cloud{
+    position: absolute;
+    bottom: 46%;
+    left: 10%;
+    margin: 0;
+    width: 18vh;
+    opacity: 100%;
+    animation:left_cloud_anm 4s;
+}
+
+.bottom-2-cloud{
+    position: absolute;
+    bottom: 36%;
+    right: 25%;
+    margin: 0;
+    width: 18vh;
+    opacity: 100%;
+    animation: right_cloud_anm 3s ease-in-out forwards;
+}
+
+
+.top-cloud {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    width: 18vh;
+    animation: right_cloud_anm 2s ease-in-out forwards;
+}
+
+@keyframes right_cloud_anm {
+    0%{
+        right: 0%;
+        opacity: 0%;
+    }
+}
+
+@keyframes left_cloud_anm {
+    0%{
+        left: 0%;
+        opacity: 0%;
+    }
+}

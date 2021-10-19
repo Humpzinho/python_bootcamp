@@ -2,7 +2,7 @@ import random
 import datetime as dt
 import smtplib
 
-with open("Day 32 - Birthday Wisher\quotes.txt") as file:
+with open("Day 32 - Birthday Wisher\Motivational quotes\quotes.txt") as file:
     all_quotes = file.readlines()
     quote = "Subject:Motivational Quote.\n\n" + random.choice(all_quotes)
 
